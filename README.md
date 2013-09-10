@@ -27,7 +27,7 @@ The Open Source Beehive project is a collaboration between [Fablab Barcelona](ht
 
 For partnership inquiries, please email:
 
-[hello@opensourcebeehives.net](hello@opensourcebeehives.net)
+[hello@opensourcebeehives.net](mailto:hello@opensourcebeehives.net)
 
 # Warre Hive 1.0 Introduction
 
