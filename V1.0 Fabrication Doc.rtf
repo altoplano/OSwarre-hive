@@ -1,0 +1,178 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+{\fonttbl\f0\fnil\fcharset0 MyriadPro-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue233;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\b\fs26 \cf0 OS Warr\'e9 Hive  (V 1.0)\
+
+\i\b0 Licensed : BYSA  under the Creative Commons License system
+\i0 \
+
+\i Fabrication Documentation  (V1.0)
+\i0 \
+\
+------------------------\
+\
+This Open Source (OS) Warr\'e9 Hive is an adaption of the {\field{\*\fldinst{HYPERLINK "http://warre.biobees.com/"}}{\fldrslt \cf2 \ul \ulc2 Warr\'e9 Hive}} by Emile Warr\'e9,  also known as 'The peoples hive'.  It has been adjusted to fit the {\field{\*\fldinst{HYPERLINK "http://openstructures.net/"}}{\fldrslt openstructures.net}} grid and also to be fabric-able and produced at a local scale and by digital manufacturing.\
+\
+
+\b 1. 3D CAD
+\b0 \
+\
+All CAD designs have been made using Rhino 5.  You can find a 3D model with all components in the Rhino file attached.  The 3D file shows a Hive with only 3 boxes. A complete Hive can be extended to include 5 stacked boxes.  All Fabrication files contain all the components for a full 5 box OS Warr\'e9 Hive.\
+\
+
+\i 	OS Warr\'e9 Hive V1.3dm
+\i0 \
+\
+
+\b 2. Nesting Sheet Files
+\b0 \
+\
+All components of the OS Warr\'e9 Hive have been Nested into two Sheets also saved as Rhino files.  The dimensions of these Nest documents correspond with the standard 105 x 205 x 2 cm  wood panel board used in Fabrication.  Each file can be used or adapted to generate multiple fabrication strategies to suit differing 3 axis milling machines. \
+\
+
+\i 	Nesting Sheet 1.3dm\
+	Nesting Sheet 2.3dm
+\i0 \
+\
+
+\b 3. Fabrication Strategies
+\b0 \
+\
+The RhinoCAM plugin was used to generate the Fabrication strategies and the Gcode needed to run the Shopbot milling machine.  The Nesting Sheet  (.3dm) files also contain the milling path strategies.  You can activate and edit these milling path strategies by running the RhinoCAM plugin.  You can see the milling paths the machine will take by running this software.   \
+\
+The milling path files have been saved in a Gcode  (.spb) format to interface with Shopbot's own CAM software.   The Gcode files for each panel have been split into two sequential milling operations.  These are named :  "Fixings" and "Cut"\
+\
+The
+\i  
+\i0 "Fixings" files should always be run through first.  They produce guide holes on the wood panels and indicate where to pin or screw them to Milling Machines sacrificial board. This will prevent your fixings getting in the way of the cutting paths.  The "Cut" files should always be run second.   These files contain multiple strategies and milling paths which will cut out the components.\
+\
+Note that Sheet 1 contains components and strategies to cut out profiles only,  whereas Sheet 2 contains components and strategies with milled pockets and gradients as well as profiles.  Thus : Sheet 2 will take much longer to mill. \
+\
+All strategies for have been designed to work with a \ul 1/4 inch or 6.35 mm Flathead drill bit\ulnone .\
+ \
+
+\i 	Cut Sheet 1.sbp\
+	Fixings Sheet 1.sbp\
+\
+	Cut Sheet 2.sbp\
+	Fixings Sheet 2.sbp
+\i0 \
+\
+
+\b 4. Laser Cut Patterns\
+\
+
+\b0 Before taking the Hive components to be laser cut you should clean them and sand off the sides to be free of wood chaff.  The components to engrave with the Open Structures Grid pattern are listed in the corresponding (.dxf) files below.  \
+\
+Each (.dxf) file only contains the vector patterns for individual components.  For referencing and checking both the "Nesting Sheet.3dm"  and "OS Warr\'e9 Hive V1.3dm" files also contain the vectors.\
+\
+On all components but the "landing pad" the side to engrave is indicated by the screw guide holes which are to be on the outset surface.  You should engrave the landing pad on the reverse side as it will be screwed into the base from below.\
+\
+To \ul Engrave\ulnone  we used an "Epilog Laser cutter" at \ul Speed 40 % strength : 10 %. \ulnone  \
+To \ul Cut\ulnone  out the Transparent view box window from 5mm Plexiglass : \ul Speed 15% Strength 85%\ulnone \
+\
+
+\i 	feet.dxf\
+	landing pad.dxf\
+	Roof Box.dxf\
+	Standard Box.dxf\
+	Transparent.dxf
+\i0 \
+\
+
+\b 5. Assembly\
+\
+
+\b0 Use set squares and clamps when screwing the boxes together.  90% angles are harder to produce in a wood box than it seems.  We used s\ul crews of length 35mm and with a 3mm thread\ulnone .  It is worth drilling pilot holes if you feel the wood may split.\
+\
+In this version (V.1.0) the boxes stack up by simply resting on top of one another.  They are then strapped to the ground to stop them toppling when the hive is in operation.  You may with to drill in biscuit joints or dowel joint to help locate each box in a stacking series.  \
+\
+To finish the Hive it is recommended to use \ul linseed\ulnone  oil.  This should be applied liberally, left to soak in over night and then applied again.  The hive may take several days to completely dry.\
+\
+------------------------ \
+
+\b\fs22 Improvements and Versioning Notes:
+\b0 \
+\
+
+\b 1.
+\b0  Replace all screw fixings by making all joints Snap fits\
+
+\b 2.
+\b0  Add spaces / channels and fixings to accommodate for \
+	
+\b 2.1
+\b0  The electronic boards \
+	
+\b 2.2
+\b0  Sensors  \
+	
+\b 2.3
+\b0  Bee counter\
+
+\b 3.
+\b0  Strategies to Laser the pattern before milling  (could be with mill and laser reference points)\
+
+\b 4.
+\b0  Add machine strategies to reduce post milling finishing by using multiple and refined tool bits.\
+
+\b 5.
+\b0  Make each box stackable with a simple male / female guide.  (see stacked makerbot)\
+
+\b 6. 
+\b0 Add removable tray at the bottom of the hive to extract detritus and dead bees.\
+
+\b 7. 
+\b0 Include a watering point with a moat system to allow bees to feed and repeal ants.
+\fs26 \
+------------------------ \
+
+\b\fs22 Credits and Contacts
+\b0 \
+22. Aug . 2013\
+\
+The OS Warr\'e9 Hive V.1.0  hardware has been adapted and designed by 
+\b Jonathan Minchin\
+
+\b0 The OS Warr\'e9 Hive V.1.0  hardware was created with the support of 
+\b John Rees\
+
+\b0 The OS Warr\'e9 Hive V.1.0  hardware was created with the support of 
+\b Ferran Masip\
+
+\b0 The OS Warr\'e9 Hive V.1.0  electronic sensors shield was designed and assembled by
+\b  John Rees\
+
+\b0 The OS Warr\'e9 Hive V.1.0  documentation has been produced by 
+\b Jonathan Minchin\
+
+\b0 The Smart Citizen Kit was used as the basis of all electronics. Provided by 
+\b Tomas Diez
+\b0 \
+The project was Instigated and coordinated by 
+\b OKNO  
+\b0 and by
+\b  Annamie Maes\
+
+\b0 The project was Instigated and coordinated by 
+\b Fab Lab BCN  
+\b0 and by
+\b  Tomas Diez
+\b0 \
+The Fabrication was completed at and supported by 
+\b IAAC
+\b0  the 
+\b Fab Lab Barcelona.\
+
+\b0 The OS Warr\'e9 Hive V.1.0 is part of a continuing collaboration with "
+\b Open Tech Forever"
+\b0  called 
+\b #Opensourcebeehives
+\fs26 \
+
+\b0 \
+}
