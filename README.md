@@ -15,7 +15,7 @@ These sensor enhanced hive designs are open and freely available online, the dat
 
 [Github - Main Repositories](https://github.com/opensourcebeehives)
 
-[Twitter](https://twitter.com/search?q=%23opensourcebeehives)
+[Twitter](https://twitter.com/OSbeehives)
 
 [Facebook](https://www.facebook.com/opensourcebeehives)
 
