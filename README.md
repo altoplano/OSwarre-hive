@@ -1,6 +1,8 @@
 Open Source Beehives - Warre Hive 1.0
 =========
 
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">OS Warré Hive</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.opensourcebeehives.net/" property="cc:attributionName" rel="cc:attributionURL">Open Source Beehives</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://www.opensourcebeehives.net/" rel="dct:source">http://www.opensourcebeehives.net/</a>.
+
 # Project Overview
 
 The Open Source Beehives project is a collaborative response to the threat faced by bee populations in industrialised nations around the world. The project proposes to design hives that can support bee colonies in a sustainable way and to monitor and track the health and behaviour of a colony as it develops. Each hive contains an open source sensory kit, The Smart Citizen Kit (SCK), which can transmit to an open data platform: [Smartcitizen.me](http://www.smartcitizen.me)
